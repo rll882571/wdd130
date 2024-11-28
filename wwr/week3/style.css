@@ -1,97 +1,164 @@
 :root {
     --primary-color: #00A5CF;
     --secondary-color: #F7C948;
-    --accent1-color: #2F855A;
+    --accent1-color: #f0f0f0;
     --accent2-color: #FF6F61;
 }
 
-* {
+/* Define o fundo e a centralização do corpo da página */
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Righteous', sans-serif;
+    background-color:  lightblue;
+	  
 }
 
+/* Estiliza o cabeçalho com fundo verde e logo */
 header {
-    background-color: var(--primary-color);
+    background-color: lightblue; /* Cor de fundo escuro */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container do cabeçalho */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 0 20px;
 }
 
-header img {
-    height: 50px; /* Ajuste o tamanho desejado */
-    width: 50px; /* Deve ser igual à altura para manter o círculo */
-    border-radius: 50%; /* Faz a imagem ficar circular */
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorções */
+/* Logo */
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+/* Estiliza o menu de navegação */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Espaçamento entre os links */
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
-    color: var(--link-color);
+nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     transition: color 0.3s;
+	font-family: 'Righteous', sans-serif; /* Fonte radical */
+    font-size: 1rem; /* Ajuste o tamanho conforme necessário */
+    transition: color 0.3s;
+	  
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: var(--secondary-color); /* Altere a cor ao passar o mouse */
-    transition: color 0.3s; /* Transição suave */
+	transition: color 0.3s; /* Transição suave */
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    width: 250px;
+}
+
+.search-box button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-box button:hover {
+    background-color: #45a049;
+}
+
+.search-box button:hover {
+    background-color: #45a049;
 }
 .hero {
-    position: relative; /* Define como contêiner de referência para os elementos filhos */
-    width: 100%; /* Largura total da página */
-    height: 400px; /* Altura ajustável conforme necessário */
-    overflow: hidden; /* Evita que elementos escapem da div */
+    position: relative; 
+    width: 100%;
 }
 
 .hero img {
-    width: 100%; /* Faz a imagem ocupar a largura total */
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem proporcionalmente sem distorções */
+    width: 100%;
+    
 }
 
 .hero h1 {
-    position: absolute; /* Posiciona o título em relação à hero div */
-    top: 20px; /* Ajusta a posição do título */
-    left: 20px;
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Efeito de sombra para maior contraste */
+    position: absolute; 
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent2-color);
+    font-size: 3.5rem;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
-    position: absolute; /* Posiciona o artigo sobre a imagem */
-    bottom: 20px; /* Alinha na parte inferior da hero div */
-    left: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-    padding: 15px;
-    border-radius: 8px;
-    width: calc(100% - 40px); /* Ajusta largura para evitar bordas cortadas */
-}
-
-.hero article img {
-    width: 50px; /* Tamanho do ícone */
-    vertical-align: middle;
-    margin-right: 10px;
+    position: absolute; 
+    top: 45%;
+    max-width: 20%;
+    left: 75%;
+    
 }
 
 .hero article p {
-    display: inline; /* Mantém o texto ao lado do ícone */
-    font-size: 1.2rem;
+    text-align: justify;
+    transform: translate(-110%, 120%);   
 }
 
-footer a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Mantém a cor do texto conforme o estilo do pai */
-    display: inline-block; /* Garante espaçamento adequado em volta dos ícones */
+.history h2 {
+    color: var(--accent1-color);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.history p {
+    text-align:start;
+}
+
+.history {
+    border: 1px solid #000;
+}
+
+.adventure {
+    border: 1px solid #000;
+}
+
+.adventure img {
+    width: 250px; 
+    height: auto; 
+    margin: 5px;
+    display: inline-block; /* Alinha as imagens lado a lado */
+}
+
+.adventure h2 {
+    color: var(--accent1-color);
+    text-align: center;
+}
+
+.adventure img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
