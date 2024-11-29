@@ -127,7 +127,8 @@ nav a:hover {
 
 .hero article p {
     text-align: justify;
-    transform: translate(-110%, 120%);   
+    transform: translate(-110%, 120%);
+    font-family: 'Open Sans';   
 }
 
 .history h2 {
