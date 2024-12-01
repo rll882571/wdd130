@@ -113,7 +113,7 @@ nav a:hover {
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     font-size: 3.5rem;
     font-family: 'Righteous', cursive;
     background-color: rgba(0, 0, 0, 0.5);
@@ -133,7 +133,9 @@ nav a:hover {
 .hero article p {
     text-align: justify;
     transform: translate(-110%, 120%);
-    font-family: 'Open Sans';   
+    font-family: 'Open Sans';  
+    color: var(--accent1-color);
+
 }
 
 .history h2 {
