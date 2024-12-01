@@ -116,16 +116,17 @@ nav a:hover {
     color: var(--accent2-color);
     font-size: 3.5rem;
     font-family: 'Righteous', cursive;
-    border-top: 1px solid rgba(0, 0, 0, 0.5); /* Bordo preto transparente no topo */
-    border-left: 1px solid rgba(0, 0, 0, 0.5); /* Bordo preto transparente à esquerda */
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+
+
 }
 
 .hero article {
     position: absolute; 
-    top: 45%;
+    top: 37%;
     max-width: 20%;
     left: 75%;
+    border-top-color: #000;
     
 }
 
@@ -166,4 +167,10 @@ nav a:hover {
 
 .adventure img:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
