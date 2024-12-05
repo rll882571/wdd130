@@ -15,6 +15,8 @@
 .main img {
 width: 150px;
 height: auto;
+border-radius: 50%;
+object-fit: cover;
 }
 
 p{ padding: 0;}
@@ -23,4 +25,24 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+main {
+max-width: 840px;
+}
+
+header {
+    background-color: rgb(82, 70, 70); /* Cor de fundo escuro */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(99, 94, 94, 0.1);
+    text-align:center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+	font-family: 'Righteous', sans-serif; /* Fonte radical */
+    font-size: 1rem; /* Ajuste o tamanho conforme necessário */
+    transition: color 0.3s;
+    padding: 20px;
 }
