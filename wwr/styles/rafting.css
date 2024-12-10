@@ -8,7 +8,8 @@
 /* Define o fundo e a centralização do corpo da página */
 body {
     margin: 0;
-    font-family: 'Righteous', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     background-color:  lightblue;
     
 	  
@@ -107,6 +108,8 @@ nav a:hover {
     display: block;
     height: auto;
     
+    
+    
 }
 
 .hero h1 {
@@ -115,27 +118,34 @@ nav a:hover {
     left: 50%;
     transform: translateX(-50%);
     color: var(--accent1-color);
-    font-size: 3.5rem;
-    font-family: 'Righteous', cursive;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 4.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
 
 
 }
 
 .hero article {
     position: absolute; 
-    top: 37%;
+    top: 15%;
     max-width: 20%;
     left: 75%;
-    border-top-color: #000;
+   
     
 }
+
+
 
 .hero article p {
     text-align: justify;
     transform: translate(-110%, 120%);
-    font-family: 'Open Sans';  
+    font-family: "Roboto", sans-serif; 
     color: var(--accent1-color);
+    
+    
 
 }
 
@@ -176,4 +186,8 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+footer  img {
+width: 25px;
 }
