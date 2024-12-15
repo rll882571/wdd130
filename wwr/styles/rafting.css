@@ -12,23 +12,17 @@ body {
     font-weight: 400;
     background-color:  lightblue;
     
-	  
+      
 }
 
 /* Estiliza o cabeçalho com fundo verde e logo */
 header {
-    background-color: lightblue; /* Cor de fundo escuro */
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Container do cabeçalho */
-.container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 0 20px;
 }
+
 
 /* Logo */
 .logo img {
@@ -40,37 +34,52 @@ header {
 
 /* Estiliza o menu de navegação */
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
+    gap: 20px; /* Espaçamento entre os links */
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
+
+nav ul li {
+    flex: 0 1 auto; /* Cada item pode se ajustar proporcionalmente */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha o menu à direita */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 30px; /* Espaçamento entre elementos dentro do nav */
+    text-align: right; 
+}
+
 
 nav a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
-	font-family: 'Roboto', sans-serif; /* Fonte radical */
+    font-family: 'Roboto', sans-serif; /* Fonte radical */
     font-size: 1rem; /* Ajuste o tamanho conforme necessário */
     transition: color 0.3s;
-	  
+
+      
 }
 
 nav a:hover {
     color: var(--secondary-color); /* Altere a cor ao passar o mouse */
-	transition: color 0.3s; /* Transição suave */
+    transition: color 0.3s; /* Transição suave */
 }
 
-/* Caixa de pesquisa */
+/* Caixa de pesquisa 
 .search-box {
     display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 30px;
     padding: 5px 15px;
-}
+} */
 
+/* Caixa de pesquisa 
 .search-box input {
     border: none;
     padding: 8px;
@@ -78,9 +87,10 @@ nav a:hover {
     outline: none;
     font-size: 1rem;
     width: 250px;
-}
+}*/
+    
 
-.search-box button {
+/*.search-box button {
     background-color: #4CAF50;
     border: none;
     padding: 8px 15px;
@@ -89,15 +99,13 @@ nav a:hover {
     border-radius: 20px;
     cursor: pointer;
     margin-left: 10px;
-}
+} */
 
-.search-box button:hover {
-    background-color: #45a049;
-}
 
-.search-box button:hover {
-    background-color: #45a049;
-}
+/*.search-box button:hover {
+    background-color: var(--primary-color);
+} */
+
 .hero {
     position: relative; 
     width: 100%;
@@ -106,10 +114,7 @@ nav a:hover {
 .hero img {
     width: 100%;
     display: block;
-    height: auto;
-    
-    
-    
+    height: auto;  
 }
 
 .hero h1 {
@@ -124,19 +129,14 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     text-align: center;
-
-
 }
 
 .hero article {
     position: absolute; 
     top: 15%;
     max-width: 20%;
-    left: 75%;
-   
-    
+    left: 75%;   
 }
-
 
 
 .hero article p {
@@ -145,49 +145,108 @@ nav a:hover {
     font-family: "Roboto", sans-serif; 
     color: var(--accent1-color);
     
-    
-
 }
 
-.history h2 {
-    color: var(--accent1-color);
+.history-section {
+    background-color:var(--accent1-color);
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o título */
+    border: solid black;
+}
+
+.history-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: -20px; /* Ou transform: translateY(-20px); */
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr; /* Colunas: texto - imagem - texto */
+    gap: 30px; /* Espaçamento entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    max-width: 1000px;
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.history-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0; /* Remove margens extras */
+}
+
+.adventures-section {
+    background-color:var(--accent1-color);
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border: solid black;
+}
+
+.adventures-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: -20px; /* Ou transform: translateY(-20px); */
+}
+
+.adventures-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+    gap: 20px; /* Espaçamento entre as figuras */
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+}
+
+.adventures-container img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a imagem dentro do contêiner sem distorção */
+}
+
+.adventures-container figcaption {
+    font-size: 1rem;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-}
-.history p {
-    text-align:start;
+    font-family: "Open Sans", sans-serif; /* Fonte diferente para o texto da legenda */
 }
 
-.history {
-    border: 1px solid #000;
-}
-
-.adventure {
-    border: 1px solid #000;
-}
-
-.adventure img {
-    width: 250px; 
-    height: auto; 
-    margin: 5px;
-    display: inline-block; /* Alinha as imagens lado a lado */
-}
-
-.adventure h2 {
-    color: var(--accent1-color);
-    text-align: center;
-}
-
-.adventure img:hover {
-    transform: scale(1.1); /* Aumenta a imagem em 10% */
-}
-
-footer{
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
 
-footer  img {
-width: 25px;
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Coluna para o texto, coluna para as imagens */
+    gap: 10px; /* Espaçamento entre as colunas */
+    background-color: #e0f7fa;
 }
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end; /* Alinha as imagens à direita */
+}
+
+.social-media a {
+    margin-left: 20px; /* Espaço entre as imagens */
+}
+
+.social-media img {
+    width: 25px;
+}
+
+
