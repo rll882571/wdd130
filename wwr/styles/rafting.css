@@ -150,7 +150,7 @@ nav a:hover {
 .hero article img {
     float: right; /
     margin-left: 20px; 
-    margin-bottom: 10px; /*
+    margin-bottom: 10px;
 }
 
 
@@ -251,7 +251,7 @@ footer p {
 .social-media a {
     margin-left: 20px;
     text-decoration: none;
-
+}
 .social-media img {
     width: 25px;
 }
