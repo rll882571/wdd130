@@ -147,6 +147,13 @@ nav a:hover {
     
 }
 
+.hero article img {
+    float: right;
+    margin-left: 20px; 
+    margin-bottom: 10px;
+}
+
+
 .history-section {
     background-color:var(--accent1-color);
     padding: 40px 20px; /* Espaçamento interno */
@@ -242,11 +249,9 @@ footer p {
 }
 
 .social-media a {
-    margin-left: 20px; /* Espaço entre as imagens */
+    margin-left: 20px;
+    text-decoration: none;
 }
-
 .social-media img {
     width: 25px;
 }
-
-
