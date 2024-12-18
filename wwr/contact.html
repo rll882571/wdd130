@@ -68,23 +68,23 @@
             </div>
           </section>
           <div class="form-container">
-            <h2>Contact Information</h2>
+            <h2>Contact Us</h2>
             <form action="#" method="post">
                 <!-- Full Name -->
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
                 
                 <!-- Email -->
-                <label for="email">Email:</label>
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
         
                 <!-- Purpose of the Message -->
-                <h2>Questions</h2>
+                <h3>Purpose of the Message</h3>
                 <p>What is the purpose of your message?</p>
                 <div class="radio-group">
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
                 </div>
         
                 <!-- Message -->
@@ -94,11 +94,11 @@
                 <!-- Newsletter Subscription -->
                 <div class="checkbox-group">
                     <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <label for="newsletter">Subscribe me to the monthly newsletter</label>
                 </div>
         
                 <!-- Submit Button -->
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
         </div>
        
@@ -122,3 +122,4 @@
     </body>
     </html>
     <!-- Last modified: 2024-12-17 -->
+
