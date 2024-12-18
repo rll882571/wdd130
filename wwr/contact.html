@@ -36,58 +36,79 @@
     </header>
 
     <main>
-        <div class="hero">
-            
-                <img src="./images/jpeg-optimizer_5.jpg" alt="group">
-                <h1>Steamline Rafting</h1>
-
-                   <article class=" content-article">
-                     <p>Rafting é uma atividade de  aventura que envolve muita navegação de corredeiras em um barco inflável, desafiando as forças da natureza.</p>
-                     <div class="image-placeholder"><img src="./images/happy.jpg" alt="happy"></div>
-                   </article>
-
-                   <section class="history-section">
-                    <h2>History</h2>
-                     <div class="history-container">
-                         <p>
-                            Rafting is an exhilarating outdoor adventure that has been enjoyed by enthusiasts for decades. It involves navigating through white-water rivers in an inflatable raft, making it an exciting experience for all adventure seekers.
-                         </p>
-                         <div class="history-image">
-                            <img src="./images/jpeg-optimizer_1.jpg" alt="Rafting Adventure">
-                         </div>
-                             <p>
-                            Over the years, rafting has grown in popularity, offering opportunities for team-building, family outings, and adrenaline-pumping action in stunning natural environments.
-                             </p>
-                     </div>
-                </section>  
-
-                <section class="adventures-section">
-                    <h2>Adventures</h2>
-                    <div class="adventures-container">
-                        <figure>
-                            <img src="./images/jpeg-optimizer_1.jpg" alt="Los Dientes del Diablo">
-                            <figcaption>Los Dientes del Diablo</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/jpeg-optimizer_2.jpg" alt="Big Mallard">
-                            <figcaption>Big Mallard</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/3.jpg" alt="Half Day Adventure">
-                            <figcaption>Half Day Adventure</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/jpeg-optimizer_4.jpg" alt="Full Day Adventure">
-                            <figcaption>Full Day Adventure</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/jpeg-optimizer_5.jpg" alt="Wild Rapids">
-                            <figcaption>Wild Rapids</figcaption>
-                        </figure>
-                    </div>
-                </section>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <h3>Send Us a Message</h3>
+            <p>Have questions? We're here to help! Reach out to us using the information below:</p>
+        
+            <div class="contact-details">
+              <p><strong>Address:</strong> 123 Adventure Lane, Rapids City, RC 56789</p>
+              <p><strong>Phone:</strong> (123) 456-7890</p>
+              <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            </div>
+          </section>
+        
+          <section class="map">
+            <h2>Find Us Here</h2>
+            <!-- Embed Google Map -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345076675!2d-122.4194150846813!3d37.774929579759204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818c30f9c10b%3A0x5e35f4b3cf4d7bb5!2s123%20Adventure%20Lane%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1618549419623!5m2!1sen!2sus" 
+              width="600" 
+              height="450" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </section>
+          <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile">
+              <img src="/wwr/images/images (1).jpg" alt="Smiling employee - Sarah" />
+              <p class="caption">Sarah Johnson - Team Leader</p>
+            </div>
+            <div class="profile">
+              <img src="/wwr/images/images (2).jpg" alt="Happy employee - John" />
+              <p class="caption">John Smith - Marketing Manager</p>
+            </div>
+            <div class="profile">
+              <img src="/wwr/images/images (3).jpg" alt="Cheerful employee - Maria" />
+              <p class="caption">Maria Gonzalez - Customer Service Specialist</p>
+            </div>
+          </section>
+          <div class="form-container">
+            <h2>Contact Information</h2>
+            <form action="#" method="post">
+                <!-- Full Name -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
                 
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <!-- Purpose of the Message -->
+                <h2>Questions</h2>
+                <p>What is the purpose of your message?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </div>
+        
+                <!-- Message -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        
+                <!-- Newsletter Subscription -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
         </div>
+       
     </main>
 
     <footer>
