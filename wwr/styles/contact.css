@@ -1,24 +1,16 @@
-
-    :root {
-        --primary-color: #396e94;
-        --secondary-color: #e7c24f;
-        --accent1-color: #a43312;
-        --accent2-color: #381d2a;
-        --heading-font: "Popins", sans-serif;
-        --paragraph-font: "Roboto", sans-serif;
-        --nav-bg-color: #396e94;
-        --nav-link-color: #fff;
-        --nav-hover-link-color: #aabd8c;
-        --nav-hover-active-link-color: #444994;
-        --nav-hover-bg-color: #381d2a;
-      }
+:root {
+    --primary-color: #0078A8; /* Substituição para maior contraste */
+    --secondary-color: #D89B00; /* Substituição para maior contraste */
+    --accent1-color: #EDEDED; /* Fundo mais escuro para texto claro */
+    --accent2-color: #D14B3B; /* Substituição para maior contraste */
+}
 
 /* Define o fundo e a centralização do corpo da página */
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background-color:  var(--secondary-color);
+    background-color:  lightblue;
     
       
 }
@@ -58,12 +50,12 @@ nav {
     justify-content: flex-end; /* Alinha o menu à direita */
     align-items: center; /* Centraliza verticalmente */
     gap: 30px; /* Espaçamento entre elementos dentro do nav */
-    text-align: right;
+    text-align: right; 
 }
 
 
 nav a {
-    color: var(--nav-link-color);
+    color: #EDEDED; /* Cor com contraste adequado para fundos escuros */
     text-decoration: none;
     transition: color 0.3s;
     font-family: 'Roboto', sans-serif; /* Fonte radical */
@@ -74,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--nav-hover-bg-color);
+    color: #FFD700; /* Maior contraste no hover */
     transition: color 0.3s; /* Transição suave */
 }
 
@@ -107,8 +99,7 @@ nav a:hover {
     position: absolute; 
     top: 15%;
     max-width: 20%;
-    left: 75%;
-    
+    left: 75%;   
 }
 
 
@@ -116,9 +107,11 @@ nav a:hover {
     text-align: justify;
     transform: translate(-110%, 120%);
     font-family: "Roboto", sans-serif; 
-    background-color: #ccc;
-   
-    
+    color: var(--accent1-color);
+    background-color: rgba(0, 0, 0, 0.5); /* Preto translúcido, ajustável */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Borda sombreada leve */
+    padding: 10px; /* Espaçamento interno para afastar o texto das bordas */
+    border-radius: 5px; /* Bordas arredondadas para suavidade */
     
 }
 
@@ -240,3 +233,74 @@ footer p {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.company-info {
+    margin-bottom: 20px;
+  }
+  
+  .google-map {
+    width: 600px;
+    height: 450px;
+  }
+  
+  .employee-profiles {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .employee {
+    text-align: center;
+  }
+  
+  .employee img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for Contact Form section */
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-form input {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+  }
+  .contact-form h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .contact-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3498db;
+  }
