@@ -64,54 +64,39 @@
         </div>
       </section>
 
-      <!-- Contact Form -->
-      <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+     <section class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="submit_form.php" method="post">
+    <!-- Nome -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+    <!-- E-mail -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
-          <label>Purpose of Message:</label>
-          <br /><br />
-          <input
-            type="radio"
-            id="generalInquiry"
-            name="purpose"
-            value="General Inquiry"
-            checked
-          />
-          <label for="generalInquiry">General Inquiry</label>
+    <!-- Propósito da mensagem (menu suspenso) -->
+    <label for="purpose">Purpose of Message:</label>
+    <select id="purpose" name="purpose" required>
+      <option value="">Select an option...</option>
+      <option value="generalInquiry">General Inquiry</option>
+      <option value="reservationQuestion">Reservation Question</option>
+      <option value="websiteSuggestion">Website Suggestion</option>
+    </select>
 
-          <input
-            type="radio"
-            id="reservationQuestion"
-            name="purpose"
-            value="Reservation Question"
-          />
-          <label for="reservationQuestion">Reservation Question</label>
+    <!-- Mensagem -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
 
-          <input
-            type="radio"
-            id="websiteSuggestion"
-            name="purpose"
-            value="Website Suggestion"
-          />
-          <label for="websiteSuggestion">Website Suggestion</label>
+    <!-- Inscrição na newsletter -->
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+    <!-- Botão de envio com rótulo personalizado -->
+    <button type="submit">Send Your Message</button>
+  </form>
+</section>
 
-          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
-          <label for="subscribe"
-            >Please subscribe me to the monthly newsletter</label
-          >
-
-          <button type="submit" id="submitButton">Submit</button>
-        </form>
-      </section>
     </main>
 
     <footer>
