@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0056b3;
-    --accent-color: #ff6600;
+    --accent-color: #006064;
     --secondary-color: #ffffff;
     --text-color: #1a1a1a;
     --body-font: "Roboto", sans-serif;
@@ -45,6 +45,7 @@ article {
 
 nav a {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 nav ul {
