@@ -72,16 +72,17 @@ nav a {
     width: 125px;
     height: auto;
     float: right;
+
 }
 
-article {
+.hero article {
     position: absolute;
     width: 90%;
-    text-align: center;
+    text-align: left;
     opacity: 0.8;
     background-color: var(--accent-color);
-    top: 350px;
+    top: 100px;
     padding: 1% 2% 0%;
     color: #fff;
-    left: 3%
+    left: 3%;
 }
