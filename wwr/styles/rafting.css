@@ -68,7 +68,7 @@ article {
     color: #fff;
 }
 
-article img {
+.hero article img {
     width: 125px;
     height: auto;
     float: right;
