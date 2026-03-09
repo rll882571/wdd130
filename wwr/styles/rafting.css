@@ -47,6 +47,10 @@ nav a {
     text-decoration: none;
 }
 
+nav ul {
+    list-style: none;
+}
+
 .hero {
     position: relative;
 }
