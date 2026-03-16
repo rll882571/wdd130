@@ -21,6 +21,7 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+
 }
 
 header,
@@ -90,4 +91,18 @@ nav ul {
     padding: 1% 2% 0%;
     color: #fff;
     left: 3%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    padding: 5px;
 }
