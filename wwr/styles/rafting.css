@@ -106,3 +106,63 @@ nav ul {
 header img {
     padding: 5px;
 }
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history img {
+    max-width: 280px;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    text-align: center;
+
+}
+
+.history p {
+
+    max-width: 300px;
+    margin: 0%;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gallery img {
+    max-width: 140px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #006064;
+    padding: 0;
+    color: #fff;
+}
+
+footer nav a {
+    float: right;
+}
+
+footer img {
+    width: 30px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
