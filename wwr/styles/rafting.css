@@ -45,6 +45,8 @@ nav a {
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero {
@@ -94,11 +96,6 @@ header {
     color: var(--secondary-color);
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
 header img {
     padding: 5px;
 }
@@ -142,13 +139,15 @@ section h2 {
 footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background: #006064;
+    background: var(--primary-color);
     padding: 0;
     color: #fff;
 }
 
-footer nav a {
-    float: right;
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 footer img {
