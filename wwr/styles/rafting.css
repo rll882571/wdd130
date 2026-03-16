@@ -214,19 +214,26 @@ main {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: var(--primary-color);
-    padding: 0;
+
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--primary-color);
 }
 
 footer nav {
+    position: absolute;
+    right: 10px;
     display: flex;
-    justify-content: flex-end;
     gap: 10px;
 }
 
 footer img {
     width: 30px;
+}
+
+footer p {
+    text-align: center;
 }
