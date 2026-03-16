@@ -34,7 +34,7 @@
 
     <main>
 
-        <h1>Contact Us</h1>
+        <h1 class="contact-h1">Rapid Rush Rafting</h1>
 
         <section class="contact-info">
 
@@ -51,7 +51,7 @@
 
         <section class="contact-team">
 
-            <h2>Meet Our Team</h2>
+            <h2>We are here to serve you</h2>
 
             <div class="team-grid">
 
@@ -69,62 +69,65 @@
                     <img src="images/Mila.jpg" alt="Operations coordinator">
                     <figcaption>Mila Johnson – Operations Coordinator</figcaption>
                 </figure>
-
             </div>
-            <div class="contact-layout">
-                <h2>Our Location</h2>
-                <section class="contact-map">
-
-                    <iframe src="https://www.google.com/maps?q=Fortaleza+CE&output=embed"
-                      width="100%" height="300" style="border:0;" loading="lazy"> </iframe>
-
-                </section>
-
         </section>
 
-        <section class="contact-form">
+        <div class="contact-layout">
 
-            <h2>Send Us a Message</h2>
+            <section class="contact-map">
 
-            <form>
+                <iframe src="https://www.google.com/maps?q=Fortaleza+CE&output=embed" width="100%"
+                  height="300" style="border:0;" loading="lazy"> </iframe>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+            </section>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
 
-                <p>Purpose of your message:</p>
+            <section class="contact-form">
 
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
+                <h2>Send Us a Message</h2>
 
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
+                <form>
 
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name"
+                      required>
 
-                <label for="message">Message</label>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                      required>
 
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <p>Purpose of your message:</p>
 
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Subscribe to our newsletter
-                </label>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
 
-                <button type="submit">Send Message</button>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
 
-            </form>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
 
-        </section>
+                    <label for="message">Message</label>
+
+                    <textarea id="message" name="message" rows="4" placeholder="tipe here"
+                      required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Please Subscribe me to the monthyly newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+
+                </form>
+
+            </section>
         </div>
 
     </main>
