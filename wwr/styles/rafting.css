@@ -1,3 +1,7 @@
+/* =========================
+   ROOT
+========================= */
+
 :root {
     --primary-color: #0056b3;
     --accent-color: #006064;
@@ -7,11 +11,19 @@
     --heading-font: "Roboto", sans-serif;
 }
 
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* =========================
+   GLOBAL
+========================= */
 
 body {
     font-family: var(--body-font);
@@ -38,6 +50,19 @@ article {
     padding: 8px;
 }
 
+main {
+    margin-top: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
 nav a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -48,6 +73,25 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    padding: 5px;
+}
+
+/* =========================
+   HERO (ABOUT PAGE)
+========================= */
 
 .hero {
     position: relative;
@@ -70,13 +114,6 @@ nav ul {
     color: #fff;
 }
 
-.hero article img {
-    width: 125px;
-    height: auto;
-    float: right;
-
-}
-
 .hero article {
     position: absolute;
     width: 90%;
@@ -89,115 +126,57 @@ nav ul {
     left: 3%;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+.hero article img {
+    width: 125px;
+    float: right;
 }
 
-header img {
-    padding: 5px;
-}
+/* =========================
+   HISTORY (ABOUT PAGE)
+========================= */
 
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.history h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
 .history img {
     max-width: 280px;
 }
 
-.history h2 {
-    grid-column: 1/4;
-    text-align: center;
-
-}
-
 .history p {
-
     max-width: 300px;
-    margin: 0%;
-
+    margin: 0;
 }
+
+/* =========================
+   GALLERY
+========================= */
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery img {
     max-width: 140px;
 }
 
-section h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
+/* =========================
+   CONTACT PAGE
+========================= */
 
-figcaption {
+.contact-h1 {
     text-align: center;
-}
-
-footer p {
-    text-align: center;
-}
-
-main {
-    margin-top: 10px;
 }
 
 .contact-info {
     text-align: center;
-}
-
-.contact-map iframe {
-    border-radius: 6px;
-}
-
-.contact-team .team-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-team img {
-    max-width: 150px;
-}
-
-.contact-form form {
-    display: grid;
-    gap: 10px;
-}
-
-.team-grid img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 0px 0px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.team-grid figure {
-    text-align: center;
-    max-width: 200px;
-}
-
-.team-grid figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-
-}
-
-.contact-map {
-    max-width: 400px;
-}
-
-.contact-form {
-    max-width: 400px;
-
 }
 
 .contact-layout {
@@ -209,18 +188,188 @@ main {
     grid-column: 1 / 3;
 }
 
-.contact-h1 {
+.contact-map {
+    max-width: 400px;
+}
+
+.contact-map iframe {
+    border-radius: 6px;
+}
+
+.contact-form {
+    max-width: 400px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.contact-team .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-team img {
+    max-width: 150px;
+}
+
+.team-grid figure {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   HOME PAGE HERO
+========================= */
+
+.heading-message {
+    position: relative;
+}
+
+.heading-message img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.heading-message h1 {
+    position: absolute;
+    top: 20px;
+    margin-left: 30%;
+    color: var(--secondary-color);
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newslatter {
+    max-width: 400px;
+    margin: 0.5rem;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+}
+
+.newslatter form {
+    display: grid;
+    gap: 10px;
+}
+
+.newslatter h2 {
     text-align: center;
 }
 
-footer {
+.newslatter button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.call {
+    max-width: 400px;
+    margin: 0.5rem;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    margin-left: 430px;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+}
+
+.call h2 {
+    text-align: center;
+}
+
+.call button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+/* =========================
+   OFFERINGS (HOME PAGE)
+========================= */
+
+.offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -10px;
+}
+
+.offerings figure {
+    text-align: center;
+    padding: 20px;
+}
+
+.offerings img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offerings figcaption {
+    text-align: center;
+}
+
+.offerings p {
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     background: var(--primary-color);
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
 }
 
 footer nav {
@@ -232,4 +381,38 @@ footer nav {
 
 footer img {
     width: 30px;
+}
+
+/* Transforma o formulário em uma grade de 2 colunas */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    /* Esquerda com 150px, Direita ocupa o resto do espaço (1fr) */
+    align-items: start;
+    /* Alinha os textos pelo topo */
+    gap: 15px;
+    /* Espaço entre as linhas e colunas */
+    max-width: 500px;
+    /* Evita que o form fique esticado na tela toda */
+}
+
+/* Coloca as bolinhas de rádio uma embaixo da outra */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Garante que os inputs de texto não fiquem feios */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Joga o checkbox e o botão para a coluna da direita, alinhados com os campos */
+.checkbox-group,
+.contact-form button {
+    grid-column: 2 / 3;
 }

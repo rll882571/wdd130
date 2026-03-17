@@ -38,7 +38,6 @@
 
         <section class="contact-info">
 
-            <h2>Company Information</h2>
 
             <p><strong>Address:</strong> 444 Fortaleza City, CE 60442-132</p>
 
@@ -86,42 +85,35 @@
             <section class="contact-form">
 
 
-                <form>
-
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name"
-                      required>
+                <<form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Placeholder" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email"
-                      required>
+                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
 
-                    <p>Purpose of your message:</p>
-
-                    <label>
-                        <input type="radio" name="purpose" value="general" id="inquiry"
-                          required>General Inquiry</label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservation"
-                          id="reservation">Reservation Question</label>
-
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion"
-                          id="suggestion">Website Suggestion</label>
+                    <label>Message Purpose</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="purpose" value="general" id="inquiry"
+                              required> General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"
+                              id="reservation"> Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"
+                              id="suggestion"> Website Suggestion</label>
+                    </div>
 
                     <label for="message" id="me">Message</label>
-
                     <textarea id="message" name="message" rows="4" placeholder="type here"
                       required></textarea>
 
-                    <label for="subscribe">
-                        <input type="checkbox" name="newsletter" id="subscribe">Please Subscribe me
-                        to the monthyly newsletter</label>
+                    <div class="checkbox-group">
+                        <label for="subscribe">
+                            <input type="checkbox" name="newsletter" id="subscribe"> Please
+                            Subscribe me to the monthly newsletter</label>
+                    </div>
 
                     <button type="submit" id="button">Get in Touch now!</button>
-
-                </form>
+                    </form>
 
             </section>
         </div>

@@ -1,0 +1,217 @@
+/* =========================
+   ROOT
+========================= */
+
+:root {
+    --primary-color: #0056b3;
+    --accent-color: #006064;
+    --secondary-color: #ffffff;
+    --text-color: #1a1a1a;
+    --body-font: "Roboto", sans-serif;
+    --heading-font: "Roboto", sans-serif;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--primary-color);
+
+}
+
+header img {
+    padding: 5px;
+}
+
+/* =========================
+   HERO / HEADING MESSAGE
+========================= */
+
+.heading-message {
+    position: relative;
+}
+
+.heading-message img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.heading-message h1 {
+    position: absolute;
+    top: 20px;
+    margin-left: 30%;
+    color: var(--secondary-color);
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newslatter {
+    max-width: 400px;
+    margin: 0.5rem;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+}
+
+.newslatter form {
+    display: grid;
+    gap: 10px;
+}
+
+.newslatter h2 {
+    text-align: center;
+}
+
+.newslatter button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.call {
+    max-width: 400px;
+    margin: 0.5rem;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    margin-left: 800px;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+    margin-left: 430px;
+}
+
+.call h2 {
+    text-align: center;
+}
+
+.call button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 30%;
+}
+
+/* =========================
+   OFFERINGS SECTION
+========================= */
+
+.offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: -10px;
+}
+
+.offerings img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: 0px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 14px;
+    margin-top: 30px;
+}
+
+.offerings figcaption {
+    text-align: center;
+}
+
+.offerings figure {
+    text-align: center;
+    padding: 20px;
+}
+
+.offerings p {
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer nav {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+footer img {
+    width: 30px;
+}
