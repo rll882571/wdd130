@@ -225,9 +225,9 @@ header img {
 }
 
 .team-grid img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -423,7 +423,6 @@ footer img {
     color: var(--primary-color);
 }
 
-/* O Grid para as 3 viagens ficarem lado a lado em telas grandes */
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,7 +432,6 @@ footer img {
     margin: 0 auto;
 }
 
-/* Estilo de cada "cartão" de viagem */
 .trip-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -447,7 +445,6 @@ footer img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    /* Faz a imagem cortar bonitinho sem achatar */
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -457,7 +454,6 @@ footer img {
     margin-bottom: 10px;
 }
 
-/* Estilo da Tabela de Comparação */
 .trips-table-section {
     max-width: 1000px;
     margin: 50px auto;
