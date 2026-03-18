@@ -281,7 +281,7 @@ header img {
     text-align: center;
 }
 
-.newslatter button {
+.newslatter a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -311,7 +311,7 @@ header img {
     text-align: center;
 }
 
-.call button {
+.call a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
